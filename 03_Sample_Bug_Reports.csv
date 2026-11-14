@@ -1,0 +1,6 @@
+﻿Bug ID,Module,Title,Steps to Reproduce,Expected Result,Actual Result,Severity,Status,Note
+BUG-001,Cart,Cart accepts quantity zero,Add a product; change quantity to 0; update cart,Cart should reject zero quantity,Cart updates successfully with quantity 0,Medium,Open,Illustrative sample only
+BUG-002,Registration,Duplicate email validation missing,Register with an email already used in demo data,System should show duplicate-email validation,A second account is created using the same email,High,Open,Illustrative sample only
+BUG-003,Checkout,Order total not recalculated after quantity change,Add item; change quantity; proceed to checkout,Checkout total should reflect updated quantity,Checkout shows the previous subtotal,High,Open,Illustrative sample only
+BUG-004,Login,Logout does not invalidate session,Login; logout; press browser Back,Protected account page should require login,Account details remain visible after logout,High,Open,Illustrative sample only
+BUG-005,Search,No-result state is blank,Search for an unavailable product,A helpful no-results message should appear,Search results area is blank,Low,Open,Illustrative sample only

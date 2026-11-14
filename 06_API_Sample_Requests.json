@@ -1,0 +1,26 @@
+{
+  "notice": "Fictional examples only. These are not live endpoints and contain no credentials.",
+  "register_request_example": {
+    "name": "Demo User",
+    "email": "demo.user@example.test",
+    "password": "ExampleOnly123!"
+  },
+  "register_response_example": {
+    "message": "Registration successful",
+    "userId": "DEMO-1001"
+  },
+  "login_error_example": {
+    "message": "Invalid email or password",
+    "status": 401
+  },
+  "product_response_example": {
+    "products": [
+      {
+        "productId": "P-101",
+        "name": "Demo Phone",
+        "price": 19999.0,
+        "currency": "INR"
+      }
+    ]
+  }
+}

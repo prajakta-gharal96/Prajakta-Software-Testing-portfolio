@@ -1,0 +1,9 @@
+﻿Test ID,Method,Fictional Endpoint,Input/Condition,Expected Validation
+API-001,POST,/api/demo/register,Valid registration payload,201 Created or documented success response; response contains safe account identifier
+API-002,POST,/api/demo/register,Missing email field,400 Bad Request with field validation message
+API-003,POST,/api/demo/login,Valid demo credentials,200 OK and documented authentication response
+API-004,POST,/api/demo/login,Incorrect password,401 Unauthorized without exposing password or account secrets
+API-005,GET,/api/demo/products,No query parameters,200 OK and product list schema is valid
+API-006,GET,/api/demo/products?search=phone,Search term query,200 OK; results match search term or return empty list
+API-007,GET,/api/demo/orders,No authentication token,401 Unauthorized
+API-008,GET,/api/demo/orders,Authenticated test user token,200 OK; only current test user's orders are returned

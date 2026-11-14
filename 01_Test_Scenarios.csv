@@ -1,0 +1,16 @@
+﻿Scenario ID,Module,Test Scenario,Type
+TS-01,Registration,Verify registration with valid details,Positive
+TS-02,Registration,Verify registration with an already registered email,Negative
+TS-03,Login,Verify login with valid credentials,Positive
+TS-04,Login,Verify login with incorrect password,Negative
+TS-05,Login,Verify required-field validation,Negative
+TS-06,Product Search,Verify search using an existing product name,Positive
+TS-07,Product Search,Verify search with no matching product,Negative
+TS-08,Cart,Verify adding an available product to cart,Positive
+TS-09,Cart,Verify cart quantity update,Positive
+TS-10,Cart,Verify cart does not accept zero or negative quantity,Negative
+TS-11,Checkout,Verify checkout with valid delivery details,Positive
+TS-12,Checkout,Verify checkout blocks missing mandatory address fields,Negative
+TS-13,Order,Verify order confirmation after successful checkout,Positive
+TS-14,Order,Verify order history shows the signed-in user's orders only,Security/Access
+TS-15,Logout,Verify user session ends after logout,Security/Session

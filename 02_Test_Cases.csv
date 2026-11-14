@@ -1,0 +1,15 @@
+﻿Test Case ID,Module,Test Case,Steps,Expected Result,Priority,Test Type
+TC-001,Registration,Valid registration,"Open registration page; enter a new synthetic name, email and valid password; submit",Account is created and success message is shown,High,Positive
+TC-002,Registration,Duplicate email,Register using an email already present in demo test data,Registration is rejected with a clear duplicate-email message,Medium,Negative
+TC-003,Login,Valid login,Enter valid demo credentials and submit,User is authenticated and redirected to the account page,High,Positive
+TC-004,Login,Invalid password,Enter a valid demo email and incorrect password,Login is rejected without revealing sensitive account details,High,Negative
+TC-005,Login,Blank mandatory fields,Leave email and password blank; submit,Required-field validation is displayed,Medium,Negative
+TC-006,Search,Existing product search,Search for a product known to exist in demo catalogue,Relevant matching products are displayed,Medium,Positive
+TC-007,Search,No-result search,Search for a random string with no catalogue match,A clear no-results message is displayed,Low,Negative
+TC-008,Cart,Add product to cart,Open an available product and select Add to Cart,"Product is added with correct name, price and default quantity",High,Positive
+TC-009,Cart,Update quantity,Change cart quantity from 1 to 2,Quantity and subtotal are recalculated correctly,High,Positive
+TC-010,Cart,Invalid quantity,Attempt to set quantity to 0 or a negative number,Invalid quantity is prevented and a validation message is shown,Medium,Negative
+TC-011,Checkout,Missing address fields,Proceed to checkout with mandatory address fields blank,Checkout is blocked and required fields are identified,High,Negative
+TC-012,Checkout,Valid checkout,Enter valid synthetic delivery details and complete demo checkout,Order confirmation is displayed with an order reference,High,Positive
+TC-013,Order History,User-specific order history,Sign in as a test user and open order history,Only orders belonging to the signed-in test user are displayed,High,Access Control
+TC-014,Logout,Logout behavior,Sign out and use browser Back to revisit account page,Protected page requires authentication again,High,Security
